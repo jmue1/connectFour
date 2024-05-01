@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Applying basic styles to the body element */
+body {
+    background-color: black; /* Sets the background color to black */
+    color: white;            /* Sets the text color to white */
+    font-family: 'Georgia', serif; /* Sets the font family to Georgia, with a generic serif fallback */
+    font-size: 18px;         /* Sets the font size to 18 pixels */
+    line-height: 1.6;        /* Increases the line height for better readability */
+}
+
+
+.center-text {
+    text-align: center;
+    align-items: center;
+}
+
+#turnText {
+    margin-bottom: 10px;
+}
+
+/* game elements */
+
+#restartBtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #b1000085;
+    color: #ffffff;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+    border-top: none;
+    border-left: none;
+    font-family: 'Georgia', serif;
+}
+
+#restartBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.colBtn {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    line-height: 35px;
+    background-color: #000000;
+    color: red;
+    font-family: 'Georgia', serif;
+    border: 2px solid white;
+    font-size: 13px;
+    user-select: none;
+}
+
+.colBtn:hover {
+    cursor: pointer;
+}
+
+#divider {
+    width: 350px;
+    height: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 100px;
+    border: 2px solid;
+}
+
+/* Basic styling for the navbar */
+.navbar {
+    padding: 25px; /* Padding around the navbar */
+    align-self: center auto;
+}
+/* Styling for the navigation buttons */
+.nav-buttons .button {
+    margin-top: 25px;
+    align-self: center auto;
+    background-color: #b1000085;
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding inside the buttons */
+    margin: 0 10px; /* Space between buttons */
+    border-color: #b1000085;
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+    display: inline-block;     /* Allows the transform to work properly */
+}
+
+/* Hover effect for buttons */
+.nav-buttons .button:hover {
+    transform: scale(1.1);
+}
